@@ -293,7 +293,7 @@
             <!-- bus information -->
 
             <div
-                class="flex justify-evenly">
+                class="flex justify-evenly mb-7">
 
                 <div
                     class="p-10">
@@ -323,7 +323,7 @@
                                 class="btn text-[#1DD100] "><img
                                     src="images/seat-green.png"
                                     alt="">
-                                40
+                                8
                                 seats
                                 left</button>
                         </div>
@@ -402,12 +402,192 @@
             </div>
 
 
-            
+            <!-- ticket buy section -->
 
+            <div class="flex">
+
+                <!-- available seat  -->
+                <!-- seat title -->
+                <div
+                    class="pt-8 pl-8">
+                    <h1
+                        class="text-2xl font-semibold border-b border-dashed  pb-6 ">
+                        Select
+                        Your
+                        Seat
+                    </h1>
+                    <div
+                        class="flex space-x-96 pt-5 border-b border-dashed  pb-6 ">
+                        <div
+                            class="flex gap-3">
+                            <img src="images/seat-gray.png"
+                                alt="">
+                            <p
+                                class="text-xl font-medium text-[#03071280]">
+                                Available
+                            </p>
+                        </div>
+                        <div
+                            class="flex gap-3">
+                            <img src="images/seat-green.png"
+                                alt="">
+                            <p
+                                class="text-xl font-medium text-[#03071280]">
+                                Selected
+                            </p>
+                        </div>
+                    </div>
+                    <!-- seat position -->
+                    <div>
+                        <div
+                            class="mt-6 mb-6 flex justify-end">
+                            <button
+                                class="btn bg-[#0307121A] px-8">
+                                <img src="images/tabler-icon-steering-wheel.png"
+                                    alt="">
+                            </button>
+
+                        </div>
+
+                        <div>
+                            <div
+                                class="flex justify-between mb-6">
+
+                                <div
+                                    class="">
+                                    <button
+                                        class="btn px-12 py-5 mr-8">A1</button>
+                                    <button
+                                        class="btn px-12 py-5">A2</button>
+                                </div>
+                                <div
+                                    class="">
+                                    <button
+                                        class="btn px-12 py-5">A3</button>
+                                    <button
+                                        class="btn px-12 py-5 ml-8">A4</button>
+                                </div>
+
+                            </div>
+                            <div
+                                class="flex justify-between mb-4">
+
+                                <div
+                                    class="">
+                                    <button
+                                        class="btn px-12 py-5 mr-8">B1</button>
+                                    <button
+                                        class="btn px-12 py-5">B2</button>
+                                </div>
+                                <div
+                                    class="">
+                                    <button
+                                        class="btn px-12 py-5">B3</button>
+                                    <button
+                                        class="btn px-12 py-5 ml-8">B4</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- selected seat -->
+                <div
+                    class=" ml-10 pt-8 pl-8 ">
+                    <h1
+                        class="text-2xl font-semibold border-b border-dashed  pb-6 mb-3">
+                        Select
+                        Your
+                        Seat
+                    </h1>
+                    <div
+                        class="bg-[#F7F8F8] rounded-xl p-5">
+                        <div
+                            class="flex space-x-48 pt-5 border-b border-dashed  pb-6 px-2 rounded-md font-medium ">
+                            <h2>Seat<span
+                                    class="bg-green-500 p-1 rounded-sm text-white">0</span>
+                            </h2>
+                            <h2>Class
+                            </h2>
+                            <h2>Price
+                            </h2>
+                        </div>
+                        <div
+                            class="m-4">
+                            <hr>
+                        </div>
+                        <!-- price count -->
+                        <div
+                            class="flex justify-between text-xl font-medium mb-4">
+                            <h2>Total
+                                Price
+                            </h2>
+                            <h2>BDT
+                                0
+                            </h2>
+                        </div>
+                        <!-- coupon input -->
+                        <div
+                            class="flex justify-center relative">
+                            <input
+                                class="rounded-xl px-20 py-3 "
+                                type="text"
+                                placeholder="Have any coupon?">
+                            <button
+                                class="btn bg-[#1DD100] text-white p-3 absolute -mr-64">Apply</button>
+                        </div>
+                        <!-- grand price -->
+                        <div
+                            class="flex justify-between text-xl font-medium mt-4">
+                            <h2>Grand
+                                Total
+                            </h2>
+                            <h2>BDT
+                                0
+                            </h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn  text-xl font-extrabold bg-[#1DD100] mt-6 flex justify-center"
+                            onclick="my_modal_2.showModal()">
+                            Next
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
     </main>
+
+
+
+    <!-- next button modal-->
+    <dialog id="my_modal_2"
+        class="modal">
+        <div
+            class="modal-box flex flex-col justify-center items-center">
+<img src="images/success.png" alt="">
+            <h3
+                class="font-bold text-2xl text-[#27AE60]">
+                SUCCESS</h3>
+            <p class="py-4 text-xl font-medium text-center">
+                Thank you for Booking Our Bus Seats. <br> 
+We are working hard to find the best service and deals for you. </p>
+<p class="text-xl font-light">Shortly you will find a confirmation in your email.</p>
+<div class="btn bg-[#27AE60] text-white px-28 rounded-3xl mt-5">Continue</div>
+        </div>
+        <form method="dialog"
+            class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+
 
 
 
