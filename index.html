@@ -141,7 +141,8 @@
                         NOW!
                     </p>
                     <!-- <button class="btn text-xl font-bold bg-[#1DD100] text-[#030712]">Buy Tickets</button> -->
-                    <a class=" btn text-xl font-bold bg-[#1DD100] text-[#030712]"
+                    <a class=" btn text-xl font-bold bg-[#1DD100] text-[#030712]   ;
+                    "
                         href="#buy-ticket">Buy
                         Tickets</a>
                 </div>
@@ -323,7 +324,8 @@
                                 class="btn text-[#1DD100] "><img
                                     src="images/seat-green.png"
                                     alt="">
-                                8
+                                <span
+                                    id="total-seat">8</span>
                                 seats
                                 left</button>
                         </div>
@@ -449,23 +451,30 @@
 
                         </div>
 
-                        <div>
+                        <div
+                            id="bus-seat">
                             <div
                                 class="flex justify-between mb-6">
 
                                 <div
                                     class="">
                                     <button
-                                        class="btn px-12 py-5 mr-8">A1</button>
+                                        id="A1"
+                                        class="btn btnText  px-12 py-5 mr-8">
+                                        A1
+                                    </button>
                                     <button
-                                        class="btn px-12 py-5">A2</button>
+                                        id="A2"
+                                        class="btn btnText  px-12 py-5">A2</button>
                                 </div>
                                 <div
                                     class="">
                                     <button
-                                        class="btn px-12 py-5">A3</button>
+                                        id="A3"
+                                        class="btn btnText  px-12 py-5">A3</button>
                                     <button
-                                        class="btn px-12 py-5 ml-8">A4</button>
+                                        id="A4"
+                                        class="btn btnText px-12 py-5 ml-8">A4</button>
                                 </div>
 
                             </div>
@@ -475,16 +484,20 @@
                                 <div
                                     class="">
                                     <button
-                                        class="btn px-12 py-5 mr-8">B1</button>
+                                        id="B1"
+                                        class="btn btnText px-12 py-5 mr-8">B1</button>
                                     <button
-                                        class="btn px-12 py-5">B2</button>
+                                        id="B2"
+                                        class="btn btnText px-12 py-5">B2</button>
                                 </div>
                                 <div
                                     class="">
                                     <button
-                                        class="btn px-12 py-5">B3</button>
+                                        id="B3"
+                                        class="btn btnText px-12 py-5">B3</button>
                                     <button
-                                        class="btn px-12 py-5 ml-8">B4</button>
+                                        id="B4"
+                                        class="btn btnText px-12 py-5 ml-8">B4</button>
                                 </div>
 
                             </div>
@@ -508,12 +521,22 @@
                         <div
                             class="flex space-x-48 pt-5 border-b border-dashed  pb-6 px-2 rounded-md font-medium ">
                             <h2>Seat<span
+                                    id="seat-count"
                                     class="bg-green-500 p-1 rounded-sm text-white">0</span>
                             </h2>
                             <h2>Class
                             </h2>
                             <h2>Price
                             </h2>
+                        </div>
+                        <!-- dynamic text -->
+                        <div
+                            class="flex space-x-48 ">
+                            <ul
+                                id="selected-item">
+
+                            </ul>
+
                         </div>
                         <div
                             class="m-4">
@@ -526,7 +549,8 @@
                                 Price
                             </h2>
                             <h2>BDT
-                                0
+                                <span
+                                    id="total-price">0</span>
                             </h2>
                         </div>
                         <!-- coupon input -->
@@ -537,6 +561,7 @@
                                 type="text"
                                 placeholder="Have any coupon?">
                             <button
+                                id="apply-btn"
                                 class="btn bg-[#1DD100] text-white p-3 absolute -mr-64">Apply</button>
                         </div>
                         <!-- grand price -->
@@ -546,7 +571,8 @@
                                 Total
                             </h2>
                             <h2>BDT
-                                0
+                                <span
+                                    id="grand-total">0</span>
                             </h2>
                         </div>
                     </div>
@@ -571,15 +597,33 @@
         class="modal">
         <div
             class="modal-box flex flex-col justify-center items-center">
-<img src="images/success.png" alt="">
+            <img src="images/success.png"
+                alt="">
             <h3
                 class="font-bold text-2xl text-[#27AE60]">
                 SUCCESS</h3>
-            <p class="py-4 text-xl font-medium text-center">
-                Thank you for Booking Our Bus Seats. <br> 
-We are working hard to find the best service and deals for you. </p>
-<p class="text-xl font-light">Shortly you will find a confirmation in your email.</p>
-<div class="btn bg-[#27AE60] text-white px-28 rounded-3xl mt-5">Continue</div>
+            <p
+                class="py-4 text-xl font-medium text-center">
+                Thank you for
+                Booking Our
+                Bus Seats.
+                <br>
+                We are working
+                hard to find
+                the best
+                service and
+                deals for you.
+            </p>
+            <p
+                class="text-xl font-light">
+                Shortly you
+                will find a
+                confirmation
+                in your email.
+            </p>
+            <div
+                class="btn bg-[#27AE60] text-white px-28 rounded-3xl mt-5">
+                Continue</div>
         </div>
         <form method="dialog"
             class="modal-backdrop">
@@ -593,7 +637,7 @@ We are working hard to find the best service and deals for you. </p>
 
 
     <script
-        src="main.js"></script>
+        src="app.js"></script>
 </body>
 
 </html>

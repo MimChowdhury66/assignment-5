@@ -1,4 +1,15 @@
-.font-railway{
+.font-railway {
     font-family: "Raleway", sans-serif;
 
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+li {
+    /* border: 12px; */
+    display: flex;
+    gap: 200px;
 }
