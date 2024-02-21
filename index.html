@@ -406,7 +406,8 @@
 
             <!-- ticket buy section -->
 
-            <div class="flex">
+            <div
+                class="flex justify-between mb-5">
 
                 <!-- available seat  -->
                 <!-- seat title -->
@@ -554,15 +555,29 @@
                             </h2>
                         </div>
                         <!-- coupon input -->
-                        <div
-                            class="flex justify-center relative">
+                        <div id="coupon-sec"
+                            class="flex justify-center relative ">
                             <input
+                                id="input-field"
                                 class="rounded-xl px-20 py-3 "
                                 type="text"
                                 placeholder="Have any coupon?">
                             <button
+                                onclick="remove()"
                                 id="apply-btn"
                                 class="btn bg-[#1DD100] text-white p-3 absolute -mr-64">Apply</button>
+                        </div>
+                        <!-- discount price -->
+                        <div id="discount-sec"
+                            class="flex justify-between text-xl font-medium mt-4 hidden">
+                            <h2>Discount
+                                price
+                            </h2>
+                            <h2>BDT
+                                -
+                                <span
+                                    id="discount-price">0</span>
+                            </h2>
                         </div>
                         <!-- grand price -->
                         <div
@@ -621,7 +636,7 @@
                 confirmation
                 in your email.
             </p>
-            <div
+            <div onclick="continueFunction()"
                 class="btn bg-[#27AE60] text-white px-28 rounded-3xl mt-5">
                 Continue</div>
         </div>
